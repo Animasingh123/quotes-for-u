@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+block style
+    style
+        include ../static/style.css
+
+block content
+    
+    section#introSection
+        div Welcome to Quotes Academy
+        div.small Have fun!
+
+    section#missionSection
+        h2 Our Services
+        div.card
+          h3 Motivational quotes
+          div.card-box
+            div.card-img
+              img(src="/static/card11.png")
+            div.card-content
+              p Best Motivational quotes 
+  
+        div.card
+          h3 love Quotes
+          div.card-box
+            div.card-img
+              img(src="/static/card22.png")
+            div.card-content
+              p Best love quotes
+
+        div.card
+          h3 Many more
+          div.card-box
+            div.card-img
+              img(src="/static/card3.jpg")
+            div.card-content
+              p And many more interesting quotes
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors 
+          img(src="/static/google.jpg", alt="google" class="spImage")
+          img(src="/static/microsoft.png", alt="microsoft" class="spImage")
+          img(src="/static/apple.jpg", alt="apple" class="spImage")
+          img(src="/static/amazon.jpg", alt="amazon" class="spImage")
